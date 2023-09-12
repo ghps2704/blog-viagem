@@ -1,0 +1,222 @@
+:root {
+    --branco-principal: #fff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --botao-azul-efeito: #0050b1;
+    --botao-preto: #2b2b2b;
+    --botao-azul-claro: #90ddeb;
+    --botao-azul-claro-efeito: #2fb5cc;
+    --botao-vermelho: #a10000;
+    --botao-verde: #00d01a;
+    --botao-rosa: #c8049b;
+    --cor-de-fundo: #9d91ff;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.container_botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_logo{
+    background-color: var(--botao-azul-claro);
+    border: 1px solid var(--botao-preto);
+    color: var(--botao-preto);
+    font-weight: 800;
+}
+
+.botao_primario{
+    display: inline-block;
+    background-color: var(--botao-azul) ;
+    margin-top: 1.5em
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.botao_terciario{
+    display: inline-block;
+    background-color: var(--botao-vermelho) ;
+    margin-top: 1.5em;
+}
+
+.botao_quartario{
+    display: inline-block;
+    background-color: var(--botao-rosa);
+    margin: 1.5em;
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.container_imagem{
+    margin: 1em 0 2em 0;
+    opacity: 0.9;
+    height: 15em;
+}
+
+.secundario_imagem{
+    width: 80%;
+    margin: 0 6em;
+}
+
+.secundario{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(86,107,230,1) 60%, rgba(157,145,255,1) 100%);
+}
+
+.terciario{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(4,5,8,1) 0%, rgba(157,15,15,1) 50%, rgba(4,5,8,1) 100%);
+}
+
+.quartario{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(4,5,8,1) 0%, rgba(166,23,133,1) 50%, rgba(4,5,8,1) 100%);
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+
+.container_descricao{
+    margin: 0 6em;
+    text-align: center;
+}
+
+.descricao_texto{
+    color: var(--cinza-secundario);
+}
+
+.terciario_imagem{
+    width: 40%;
+    margin: 0 10em;
+}
+
+
+.quartario_imagem{
+    width: 35%;
+    margin: 0 18em;
+}
+
+.icones_lista{
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 10em;
+    list-style-type: none;
+}
+
+.icones_titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.imagem_lista{
+    max-width: 40vh;
+    max-height: 50vh;
+}
+
+.imagem_lista3{
+    width: 40vh;
+}
+
+.icones{
+    text-align: center;
+    background: linear-gradient(0deg, rgba(157,145,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.lista_item{
+    margin: 2em;
+    font-size: 20px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,145,255,1) 100%);
+}
+
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3em 1em 2.5em 1em;
+}
+
+.lista_link{
+    margin: 0 0.5em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista_link a:hover{
+    color: var(--botao-azul-claro);
+}
+
+.rodape_logo{
+    width: 15vh;
+}
+
+.rodape_texto{
+    color: var(--cinza-secundario);
+}
+
+.botao_logo:hover{
+    background-color: var(--botao-azul-claro-efeito);
+    color: var(--botao-preto);
+    transition: background-color 1s;
+}
+
+.botao_primario:hover{
+    background-color: var(--botao-azul-efeito);
+    transition: background-color 1s;
+}

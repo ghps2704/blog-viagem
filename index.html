@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html>  
     <head>  
+        <title>Blog de Viagem para Buenos Aires</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        
         <!-- CSS -->
-        <link href="style.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">        
-        <link href="/public/css/bootstrap.min.css" rel="stylesheet">
-        
-        <title>Blog</title>
-        
-    </head>
-    <body> 
-    <div class="container">
-        <header>
-            <div>
-                <div class="titulo">
-                    <img src="img/logo.png" class="logo">
-                    <h2>Viagem Pra Lá</h2>
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
     
-                </div>
-                <div class="icones">
-                    <button class="icones-top"><i class="icon-search"></i></button>
-                    <button class="icones-top"><i class="icon-windows"></i></button>
-                </div>
+    </head>
+    <body>
+        <section class="container principal">
+            <div class="container_caixa">
+                <h1 class="container_titulo">Este é o meu Blog de Viagem, dedicado as pessoas curiosas que gostariam de saber mais sobre Buenos Aires e algumas outras cidades.</h1>
+                <img src="/img/logo.png" alt="Vamos viajar" class="container_imagem">
+                <a href="#" class="container_botao botao_logo">Vamos começar?</a>
             </div>
-        </header>
+        </section>
 
-      
+        <section class="container secundario">
+            <img src="img/buenos-aires-icone.png" alt="imagem estilizada de buenos aires" class="secundario_imagem">
+            <div class="container_descricao">
+                <h2 class="descricao_titulo">Sobre Buenos Aires</h2>
+                <p class="descricao_texto">Buenos Aires transformou-se numa das principais metrópoles do mundo, como capital de um país que caracterizou-se por ser um dos principais exportadores agrários. O paradoxo de uma sociedade urbana num país agrário marcou profundamente a paisagem urbana, a política e a cultura da cidade. Um estudo prospectivo da cidade, portanto, deverá partir do modo pelo qual a contradição histórica influiu na cultura e nos hábitos políticos de Buenos Aires, criando, em boa medida, a singularidade que caracteriza a história argentina deste século.</p>
+                <a href="https://pt.wikipedia.org/wiki/Buenos_Aires" class="container_botao botao_primario" target="_blank">Clique para saber mais sobre</a>
+            </div>
+        </section>
 
-        <footer>
+        <section class="container terciario">
+            <div class="container_descricao">
+                <h2 class="descricao_titulo">Sobre o Obelisco</h2>
+                <p class="descricao_texto">O Obelisco é, no mundo inteiro, o maior emblema da cidade e de seus habitantes, como a Torre Eiffel em Paris ou a Estatua da Liberdade em Nova Iorque. Inaugurado em 1936 para lembrar o quarto centenário da primeira fundação de Buenos Aires, é obra do arquiteto Alberto Prebisch, um dos principais expoentes do modernismo argentino e autor também do vizinho Teatro Gran Rex. Localiza-se no lugar onde foi hasteada, pela primeira vez, a bandeira nacional na cidade.</p>
+                <a href="https://www.viajali.com.br/obelisco-buenos-aires/" class="container_botao botao_terciario" target="_blank">Clique para saber mais sobre</a>
+            </div>
+            <img src="/img/obelisco.png" alt="Sobre o obelisco de Buenos Aires" class="terciario_imagem">
+        </section>
+    
+        <section class="container quartario">
+            <img src="/img/casa-rosada.png" alt="Sobre a casa rosada de Buenos Aires" class="quartario_imagem">
+            <div class="container_descricao">
+                <h2 class="descricao_titulo">Sobre a Casa Rosada</h2>
+                <p class="descricao_texto">A Casa Rosada é mais uma das inúmeras belas construções que se espalham pela cidade de Buenos Aires. Sede do Governo Nacional, esse incrível palácio foi declarado Museu Histórico Nacional em 1942. Localizada em frente à histórica Plaza de Mayo (Praça de Maio para os brasileiros), forma com ela um dos mais emblemáticos cartões-postais da capital portenha.</p>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwikq7S0p6WBAxV9q5UCHUCqAEwQFnoECBIQAQ&url=https%3A%2F%2Faguiarbuenosaires.com%2Fcasa-rosada%2F&usg=AOvVaw3SAXLPQ4a_e8XWMitFPRay&opi=89978449" class="container_botao botao_quartario" target="_blank">Clique para saber mais sobre</a>
+            </div>
+        </section>
 
-            <!--JS -->
-            <script src="public/js/jquery.js"></script>
-            <script src="public/js/bootstrap.bundle.min.js"></script>
-            <script src="/js/script.jquery.js"></script>
-            <script src="/js/sweetalert.min.js"></script>
-            <script src="/js/script.js" ></script> 
+        <section class="icones">
+            <h2 class="icones_titulo">Saiba mais sobre outras cidades.</h2>
+            <ul class="icones_lista">
+                <li>
+                    <img src="img/londres.png" class="imagem_lista" alt="icone de londres">
+                    <a href="londres.html" class="lista_item container_botao botao_secundario">Londres</a>
+                </li>
+                <li>
+                    <img src="img/toquio.png" class="imagem_lista" alt="icone de toquio">
+                    <a href="toquio.html" class="lista_item container_botao botao_secundario">Tóquio</a>
+                </li>
+
+                <li>
+                   <img src="img/nova-iorque.png" class="imagem_lista3" alt="icone de nova iorque">
+                   <a href="nova-iorque.html" class="lista_item container_botao botao_secundario">Nova Iorque</a> 
+                </li>
+            </ul>
+        </section>
+
+        <footer class="rodape">
+            <a href="#"><img src="img/logo.png" alt="logo" class="rodape_logo"></a>
+            <ul class="rodape_lista">
+                <li class="lista_link">
+                    <a href="#">Idioma</a>
+                </li>
+                <li class="lista_link">
+                    <a href="#">Dispositivos Compatíveis</a>
+                </li>
+                <li class="lista_link">
+                    <a href="#">Política de Privacidade</a>
+                </li>
+                <li class="lista_link">
+                    <a href="#">Proteção de dados no Brasil</a>
+                </li>
+                <li class="lista_link">
+                    <a href="#">Anuncios Personalizados</a>
+                </li>
+                <li class="lista_link">
+                    <a href="#">Ajuda</a>
+                </li>
+            </ul>
+            <p class="rodape_texto">® 2023 Viaje pelo Mundo. Todos os direitos reservados. Conteúdo sujeito a disponibilidade.</p>
         </footer>
-    </div>
     </body>
+
+    <!-- JS-->
+
+    <script src="/js/script.js"></script>
+    <script src="/js/sweetalert.min.js"></script>
+
 </html>

@@ -1,6 +1,6 @@
 function newsletter(){
     swal({
-        title:  "Você deseja assinar o newsletter do blog?",
+        title:  "Você aceita assinar o jornal do blog?",
         buttons: {
             cancel: "Não",
             confirm: "Sim",
